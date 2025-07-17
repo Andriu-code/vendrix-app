@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import { ProductContainer } from "./components/cards/ProductContainer";
+import { Navbar } from './components/navbar/Navbar';
+import { SliderButton } from './components/buttons/sliderButtons/SliderButton';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    {/* componente navBar */}
+      <Navbar />
+
+      {/* componente de card de productos */}
+      <div style={{ display: "flex", gap: "24px", padding: "40px" }}>
+        <ProductContainer
+          imageUrl="https://images.stockcake.com/public/9/2/0/920825fa-1293-4a50-90e4-6c0665af48e5_large/pharmacy-shelf-aisle-stockcake.jpg"
+          altText="Medicamentos"
+          description="Gran variedad de productos farmacéuticos al por mayor."        />
+        <ProductContainer
+          imageUrl="https://images.stockcake.com/public/2/d/e/2de25d00-588e-423a-a43c-45c88e031c98_large/luxury-beauty-collection-stockcake.jpg"
+          altText="Productos de limpieza"
+          description="Todo lo que necesitas para mantener tu espacio impecable."
+        />
+        <ProductContainer
+          imageUrl="https://images.stockcake.com/public/9/4/7/9471707b-11a1-4e0b-a155-ad6abb249d9b_large/technology-meets-agriculture-stockcake.jpg"
+          altText="Trabajadores agrícolas"
+          description="Productos agrícolas directamente del campo."
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
