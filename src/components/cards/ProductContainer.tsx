@@ -17,7 +17,7 @@ export const ProductContainer: React.FC<ProductContainerProps> = ({
       <img src={imageUrl} alt={altText} className="product-image" />
 
       {/* Decomentar si se desea mostrar la descripción */}
-      {/* <p className="product-description">{description}</p> */}
+      <p className="product-description">{description}</p>
     </div>
   );
 };
