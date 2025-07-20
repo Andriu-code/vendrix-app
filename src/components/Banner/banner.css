@@ -49,11 +49,13 @@
   font-size: 2.5rem;
   margin-bottom: 20px;
   line-height: 1.2;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
 }
 
 .banner-text p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
 }
 
 .btn {
@@ -67,6 +69,7 @@
   transition: all 0.3s;
   border: none;
   cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
 }
 
 .btn-accent {
