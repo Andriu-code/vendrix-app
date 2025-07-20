@@ -1,6 +1,7 @@
 import React from 'react'
 import { ProductContainer } from '../../components/cards/ProductContainer'
 import Banner from '../../components/Banner'
+import Beneficios from '../../components/beneficios/Beneficios'
 
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
                     description="Productos agrícolas directamente del campo."
                 />
             </div>
+            <Beneficios />
         </>
     )
 }
