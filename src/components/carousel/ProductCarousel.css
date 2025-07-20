@@ -1,0 +1,81 @@
+.product-carousel-section {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.carousel-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.carousel-header h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.carousel-header p {
+  color: var(--dark);
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  border-color: red;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.product-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.product-row {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.product-card-wrapper {
+  flex: 0 0 calc(100% / 3); /* 3 productos por slide */
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Versión móvil */
+@media (max-width: 768px) {
+  .carousel-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-header p {
+    font-size: 1rem;
+  }
+
+  .carousel-wrapper {
+    padding: 0 20px;
+  }
+
+  .product-card-wrapper {
+    flex: 0 0 100%; /* 1 producto en móvil */
+    padding: 0 10px;
+  }
+
+  .glide__arrow {
+    width: 35px;
+    height: 35px;
+  }
+  .glide__arrow--left {
+    left: 5px;
+  }
+
+  .glide__arrow--right {
+    right: 5px;
+  }
+}

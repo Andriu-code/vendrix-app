@@ -24,9 +24,11 @@
 }
 
 .glide__arrow--left {
-  left: -20px;
+  left: -10px; 
+  margin-left: 12px; 
 }
 
 .glide__arrow--right {
-  right: -20px;
+  right: -10px;
+  margin-right: 12px;
 }
