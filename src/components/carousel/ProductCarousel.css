@@ -23,12 +23,10 @@
 
 .carousel-wrapper {
   position: relative;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 40px;
-  border-color: red;
-  border-style: solid;
-  border-width: 1px;
+  
 }
 
 .product-viewport {
@@ -68,7 +66,6 @@
 
   .product-card-wrapper {
     flex: 0 0 100%; /* 1 producto en móvil */
-    padding: 0 10px;
   }
 
   .glide__arrow {
