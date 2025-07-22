@@ -27,8 +27,14 @@ export const ProductCarousel: React.FC<ProductCarouselProps> = ({
   // Ajustar número de items visibles
   useEffect(() => {
     const handleResize = () => {
-      const isMobile = window.innerWidth < 768;
-      setVisibleItems(isMobile ? 1 : 3);
+      const width = window.innerWidth;
+      if (width < 768) {
+        setVisibleItems(1);
+      } else if (width < 1024) {
+        setVisibleItems(2);
+      } else {
+        setVisibleItems(3);
+      }
     };
 
     handleResize();

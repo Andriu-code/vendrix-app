@@ -5,11 +5,13 @@
   transition: all 0.3s;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 300px; /* Evita que crezca demasiado en desktop */
+  min-width: 250px; /* O ajustable según diseño */
   display: flex;
   flex-direction: column;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover .product-image {
