@@ -19,6 +19,30 @@ export const CotizaForm: React.FC = () => {
     }));
   };
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const form = e.target as HTMLFormElement;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch("https://formspree.io/f/movlepap", {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json"
+        }
+      });
+
+      if (response.ok) {
+        window.location.href = "/thanks";
+      } else {
+        console.log("Hubo un error al enviar el formulario");
+      }
+    } catch (error) {
+      console.error(error);
+    };
+  }
 
   return (
     <section className="cotiza-section">
@@ -28,11 +52,7 @@ export const CotizaForm: React.FC = () => {
 
           {/*contenedor interno */}
           <h1 className="form-title">Cotiza con Nosotros</h1>
-          <form
-            action="https://formspree.io/f/movlepap"
-            method="POST"
-            accept-charset="UTF-8"
-          >
+          <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="empresa">Empresa</label>
               <input
@@ -83,11 +103,6 @@ export const CotizaForm: React.FC = () => {
                 required
               />
             </div>
-            <input
-              type="hidden"
-              name="_next"
-              value="https://vendrixgt.com/thanks"
-            />
             <div className="form-actions">
               <button type="submit" className="btn-form">
                 Quiero Cotizar!
