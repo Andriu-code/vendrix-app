@@ -21,19 +21,21 @@ export const ProductCarousel: React.FC<ProductCarouselProps> = ({
   subtitle = "Materiales textiles y productos para la industria de la confección",
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [visibleItems, setVisibleItems] = useState(3);
+  const [displayMode, setDisplayMode] = useState<
+    "mobile" | "tablet" | "desktop"
+  >("desktop");
   const carouselRef = useRef<HTMLDivElement>(null);
 
-  // Ajustar número de items visibles
+  // Ajustar modo de visualización
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
       if (width < 768) {
-        setVisibleItems(1);
+        setDisplayMode("mobile");
       } else if (width < 1024) {
-        setVisibleItems(2);
+        setDisplayMode("tablet");
       } else {
-        setVisibleItems(3);
+        setDisplayMode("desktop");
       }
     };
 
@@ -42,17 +44,52 @@ export const ProductCarousel: React.FC<ProductCarouselProps> = ({
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const goToNext = () => {
-    setCurrentIndex((prev) =>
-      prev + 1 >= products.length - visibleItems + 1 ? 0 : prev + 1
-    );
+  // Calcular desplazamiento basado en el modo
+  const getTransform = () => {
+    switch (displayMode) {
+      case "mobile":
+        return currentIndex * 100;
+      case "tablet":
+        return Math.floor(currentIndex / 2) * 100;
+      case "desktop":
+        return Math.floor(currentIndex / 3) * 100;
+    }
   };
 
-  const goToPrev = () => {
-    setCurrentIndex((prev) =>
-      prev <= 0 ? products.length - visibleItems : prev - 1
-    );
-  };
+  const goToNext = () => {
+  setCurrentIndex((prev) => {
+    const width = window.innerWidth;
+    
+    // Para móvil (768px) - 1 card
+    if (width < 768) {
+      return prev >= products.length - 1 ? 0 : prev + 1;
+    }
+    // Para tablet (1024px) - 2 cards
+    else if (width < 1024) {
+      return prev >= Math.floor(products.length / 2) * 2 - 2 ? 0 : prev + 2;
+    }
+    // Para desktop (≥1024px) - 3 cards
+    else {
+      return prev >= Math.floor(products.length / 3) * 3 - 3 ? 0 : prev + 3;
+    }
+  });
+};
+
+const goToPrev = () => {
+  setCurrentIndex((prev) => {
+    const width = window.innerWidth;
+    
+    if (width < 768) {
+      return prev <= 0 ? products.length - 1 : prev - 1;
+    }
+    else if (width < 1024) {
+      return prev <= 0 ? Math.floor(products.length / 2) * 2 - 2 : prev - 2;
+    }
+    else {
+      return prev <= 0 ? Math.floor(products.length / 3) * 3 - 3 : prev - 3;
+    }
+  });
+};
 
   return (
     <section className="product-carousel-section">
@@ -69,7 +106,7 @@ export const ProductCarousel: React.FC<ProductCarouselProps> = ({
             className="product-row"
             ref={carouselRef}
             style={{
-              transform: `translateX(-${currentIndex * (100 / visibleItems)}%)`,
+              transform: `translateX(-${getTransform()}%)`,
             }}
           >
             {products.map((product, index) => (

@@ -80,6 +80,13 @@ const Home = () => {
       description:
         "Repuestos y accesorios para vehículos, distribuidos al por mayor.",
     },
+    {
+      imageUrl:
+        "https://images.stockcake.com/public/3/9/6/396d22e1-48c0-4762-afc6-dc0b18c75896_large/automotive-parts-display-stockcake.jpg",
+      altText: "Repuestos automotrices",
+      description:
+        "Repuestos y accesorios para vehículos, distribuidos al por mayor.",
+    },
   ];
 
   return (
