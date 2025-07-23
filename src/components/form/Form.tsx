@@ -86,7 +86,7 @@ export const CotizaForm: React.FC = () => {
             <input
               type="hidden"
               name="_next"
-              value="https://www.vendrixgt.com/thanks"
+              value="https://vendrixgt.com/thanks"
             />
             <div className="form-actions">
               <button type="submit" className="btn-form">
