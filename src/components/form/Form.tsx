@@ -6,7 +6,7 @@ export const CotizaForm: React.FC = () => {
     empresa: "",
     nombre: "",
     email: "",
-    mensaje: "",
+    message: "",
   });
 
   const handleChange = (
@@ -19,12 +19,6 @@ export const CotizaForm: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Lógica para enviar el formulario
-    console.log("Formulario enviado:", formData);
-  };
 
   return (
     <section className="cotiza-section">
@@ -34,7 +28,11 @@ export const CotizaForm: React.FC = () => {
 
           {/*contenedor interno */}
           <h1 className="form-title">Cotiza con Nosotros</h1>
-          <form onSubmit={handleSubmit}>
+          <form
+            action="https://formspree.io/f/movlepap"
+            method="POST"
+            accept-charset="UTF-8"
+          >
             <div className="form-group">
               <label htmlFor="empresa">Empresa</label>
               <input
@@ -75,16 +73,21 @@ export const CotizaForm: React.FC = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="mensaje">Mensaje</label>
+              <label htmlFor="message">Mensaje</label>
               <textarea
-                id="mensaje"
-                name="mensaje"
+                id="message"
+                name="message"
                 className="form-control"
-                value={formData.mensaje}
+                value={formData.message}
                 onChange={handleChange}
                 required
               />
             </div>
+            <input
+              type="hidden"
+              name="_next"
+              value="https://vendrixgt.com/thanks"
+            />
             <div className="form-actions">
               <button type="submit" className="btn btn-accent-form">
                 Quiero Cotizar!
