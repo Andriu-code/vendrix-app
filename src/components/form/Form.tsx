@@ -89,7 +89,7 @@ export const CotizaForm: React.FC = () => {
               value="https://vendrixgt.com/thanks"
             />
             <div className="form-actions">
-              <button type="submit" className="btn btn-accent-form">
+              <button type="submit" className="btn-form">
                 Quiero Cotizar!
               </button>
             </div>

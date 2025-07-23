@@ -17,8 +17,8 @@ interface ProductCarouselProps {
 
 export const ProductCarousel: React.FC<ProductCarouselProps> = ({
   products,
-  title = "Amplio catálogo de materiales",
-  subtitle = "Materiales textiles y productos para la industria de la confección",
+  title = "Vendrix te ofrece, amplio catálogo de materiales",
+  subtitle = "Materiales textiles y productos para cualquier industria",
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayMode, setDisplayMode] = useState<

@@ -9,10 +9,10 @@
 }
 
 .carousel-header h2 {
-  font-size: 2rem;
+  font-size: 2.1rem;
   color: var(--primary);
   margin-bottom: 10px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .carousel-header p {
@@ -20,7 +20,7 @@
   font-size: 1.1rem;
   max-width: 800px;
   margin: 0 auto;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .carousel-wrapper {
@@ -55,7 +55,7 @@
   .product-card-wrapper {
     flex: 0 0 50%;
     max-width: 50%;
-    padding: 0 8px; /* menos espacio lateral */
+    padding: 0 4px; /* menos espacio lateral */
   }
 }
 
@@ -64,7 +64,7 @@
   .product-card-wrapper {
     flex: 0 0 33.333%;
     max-width: 50%;
-    padding: 0 8px; /* menos espacio lateral */
+    padding: 0 8px;
   }
 }
 
@@ -76,17 +76,17 @@
   }
 
   @media (width: 768px) {
-  /* Estilos CSS para pantallas de 768px de ancho */
-  .product-card-wrapper {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 8px; /* menos espacio lateral */
+    /* Estilos CSS para pantallas de 768px de ancho */
+    .product-card-wrapper {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 0 8px;
+    }
   }
-}
 
   .product-row {
     width: 100%;
-}
+  }
   .carousel-header p {
     font-size: 1rem;
   }
@@ -105,10 +105,10 @@
     height: 35px;
   }
   .glide__arrow--left {
-    left: 5px;
+    left: -25px;
   }
 
   .glide__arrow--right {
-    right: 5px;
+    right: -25px;
   }
 }
