@@ -63,6 +63,8 @@ export const CotizaForm: React.FC = () => {
                 value={formData.empresa}
                 onChange={handleChange}
                 required
+                placeholder="Ingresa el nombre de tu empresa"
+                style={{ fontFamily: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif" }}
               />
             </div>
 
@@ -76,6 +78,8 @@ export const CotizaForm: React.FC = () => {
                 value={formData.nombre}
                 onChange={handleChange}
                 required
+                placeholder="Ingresa tu nombre"
+                style={{ fontFamily: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif" }}
               />
             </div>
 
@@ -89,6 +93,8 @@ export const CotizaForm: React.FC = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
+                placeholder="Ingresa tu email"
+                style={{ fontFamily: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif" }}
               />
             </div>
 
@@ -101,6 +107,8 @@ export const CotizaForm: React.FC = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
+                placeholder="Ingresa tu consulta, nos pondremos en contacto contigo"
+                style={{ fontFamily: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif" }}
               />
             </div>
             <div className="form-actions">

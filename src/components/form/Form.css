@@ -18,15 +18,15 @@
   max-width: 600px;
   margin: 0 auto;
   background-color: white;
-  padding: 0; /* Eliminamos el padding general */
+  padding: 0; 
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Nuevo contenedor interno */
 .form-content-wrapper {
   padding: 40px;
-  padding-right: 60px; /* Ajuste específico para el margen derecho */
+  padding-right: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .form-title {
