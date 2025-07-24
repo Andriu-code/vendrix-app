@@ -6,7 +6,7 @@ export const CotizaForm: React.FC = () => {
     empresa: "",
     nombre: "",
     email: "",
-    mensaje: "",
+    message: "",
   });
 
   const handleChange = (
@@ -19,12 +19,30 @@ export const CotizaForm: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Lógica para enviar el formulario
-    console.log("Formulario enviado:", formData);
-  };
+
+    const form = e.target as HTMLFormElement;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch("https://formspree.io/f/movlepap", {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json"
+        }
+      });
+
+      if (response.ok) {
+        window.location.href = "/thanks";
+      } else {
+        console.log("Hubo un error al enviar el formulario");
+      }
+    } catch (error) {
+      console.error(error);
+    };
+  }
 
   return (
     <section className="cotiza-section">
@@ -45,6 +63,8 @@ export const CotizaForm: React.FC = () => {
                 value={formData.empresa}
                 onChange={handleChange}
                 required
+                placeholder="Ingresa el nombre de tu empresa"
+                style={{ fontFamily: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif" }}
               />
             </div>
 
@@ -58,6 +78,8 @@ export const CotizaForm: React.FC = () => {
                 value={formData.nombre}
                 onChange={handleChange}
                 required
+                placeholder="Ingresa tu nombre"
+                style={{ fontFamily: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif" }}
               />
             </div>
 
@@ -71,18 +93,22 @@ export const CotizaForm: React.FC = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
+                placeholder="Ingresa tu email"
+                style={{ fontFamily: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif" }}
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="mensaje">Mensaje</label>
+              <label htmlFor="message">Mensaje</label>
               <textarea
-                id="mensaje"
-                name="mensaje"
+                id="message"
+                name="message"
                 className="form-control"
-                value={formData.mensaje}
+                value={formData.message}
                 onChange={handleChange}
                 required
+                placeholder="Ingresa tu consulta, nos pondremos en contacto contigo"
+                style={{ fontFamily: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif" }}
               />
             </div>
             <div className="form-actions">
