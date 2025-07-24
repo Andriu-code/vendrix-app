@@ -3,88 +3,93 @@ import { CotizaForm } from "../../components/form/Form";
 import Banner from "../../components/Banner";
 import Beneficios from "../../components/beneficios/Beneficios";
 
+// Importa las imágenes locales
+import carouselImg1 from "../../assets/img/carousel/carousel_img_clean.jpg";
+import carouselImg2 from "../../assets/img/carousel/carousel_img_clean_1.jpg";
+import carouselImg3 from "../../assets/img/carousel/carousel_img_clean_2.jpg";
+import carouselImg4 from "../../assets/img/carousel/carousel_img_tools.jpg";
+import carouselImg5 from "../../assets/img/carousel/carousel_img_tools_1.jpg";
+import carouselImg6 from "../../assets/img/carousel/carousel_img_tools_2.jpg";
+import carouselImg7 from "../../assets/img/carousel/carousel_img_supplies.jpg";
+import carouselImg8 from "../../assets/img/carousel/carousel_img_supplies_1.png";
+import carouselImg9 from "../../assets/img/carousel/carousel_img_supplies_2.jpg";
+import carouselImg10 from "../../assets/img/carousel/carousel_img_services.jpg";
+import carouselImg11 from "../../assets/img/carousel/carousel_img_services_1.png";
+import carouselImg12 from "../../assets/img/carousel/carousel_img_services_2.jpg";
+
 const Home = () => {
   const products = [
     {
-      imageUrl:
-        "https://images.stockcake.com/public/9/2/0/920825fa-1293-4a50-90e4-6c0665af48e5_large/pharmacy-shelf-aisle-stockcake.jpg",
-      altText: "Medicamentos",
-      description: "Gran variedad de productos farmacéuticos al por mayor.",
+      imageUrl: carouselImg1, // Usa la importación local
+      altText: "Estante productos de limpieza",
+      description:
+        "Ofrecemos gran variedad de productos de limpieza, de distintas marcas al por mayor.",
     },
     {
-      imageUrl:
-        "https://images.stockcake.com/public/2/d/e/2de25d00-588e-423a-a43c-45c88e031c98_large/luxury-beauty-collection-stockcake.jpg",
+      imageUrl: carouselImg2,
+      altText: "Papel para limpieza",
+      description:
+        "Todo lo que necesitas para mantener tus espacios impecable.",
+    },
+    {
+      imageUrl: carouselImg3,
       altText: "Productos de limpieza",
-      description: "Todo lo que necesitas para mantener tu espacio impecable.",
-    },
-    {
-      imageUrl:
-        "https://images.stockcake.com/public/9/4/7/9471707b-11a1-4e0b-a155-ad6abb249d9b_large/technology-meets-agriculture-stockcake.jpg",
-      altText: "Trabajadores agrícolas",
-      description: "Productos agrícolas directamente del campo.",
-    },
-    {
-      imageUrl:
-        "https://images.stockcake.com/public/6/2/2/622f55a9-7f76-4d94-9463-6bf794a35135_large/emergency-station-ready-stockcake.jpg",
-      altText: "Suministros médicos",
       description:
-        "Equipos y suministros médicos para hospitales y clínicas al por mayor.",
+        "Productos de limpieza, diseñados para empresas que exigen higiene profesional.",
     },
     {
-      imageUrl:
-        "https://images.stockcake.com/public/0/f/7/0f770b27-41c5-47bf-91f7-16c55c40aecb_large/colorful-conveyor-belts-stockcake.jpg",
-      altText: "Productos alimentarios",
+      imageUrl: carouselImg4,
+      altText: "Abastecimiento ferretero",
       description:
-        "Distribución de alimentos no perecederos y productos de consumo masivo.",
+        "Abastecimiento confiable de productos ferreteros las mejores marcas.",
     },
     {
-      imageUrl:
-        "https://images.stockcake.com/public/d/5/b/d5bad2a9-6931-4991-a67b-5861adf36ea7_large/colorful-chemical-display-stockcake.jpg",
+      imageUrl: carouselImg5,
+      altText: "Kits ferreteros",
+      description:
+        "Todo lo que su empresa necesita, desde lo básico hasta equipos especializados.",
+    },
+    {
+      imageUrl: carouselImg6,
       altText: "Productos químicos industriales",
       description:
-        "Químicos especializados para uso industrial y manufacturero al por mayor.",
+        "Kits ferreteros completos por área (electricidad, plomería, construcción), empacados listos para su distribución a equipos corporativos.",
     },
     {
-      imageUrl:
-        "https://images.stockcake.com/public/7/0/d/70dbfa58-4d82-4e79-9d6b-9922e2e4bfeb_large/folded-earth-tones-stockcake.jpg",
-      altText: "Textiles y materiales",
+      imageUrl: carouselImg7,
+      altText: "Insumos para restaurantes",
       description:
-        "Telas, materiales textiles y productos para la industria de la confección.",
+        "Soluciones masivas de empaques y utensilios desechables, resistentes, con entregas programadas.",
     },
     {
-      imageUrl:
-        "https://images.stockcake.com/public/8/5/5/85530c63-64dc-4550-b06e-3abb7c575a04_large/professional-repair-materials-stockcake.jpg",
-      altText: "Materiales de construcción",
+      imageUrl: carouselImg8,
+      altText: "Insumos para restaurantes",
       description:
-        "Amplio catálogo de materiales de construcción para obras y proyectos.",
+        "Kits de inicio para restaurantes nuevos: vajilla, cubertería, insumos básicos y equipos menores.",
     },
     {
-      imageUrl:
-        "https://images.stockcake.com/public/8/4/9/849c752e-bc5e-4572-a63f-871d9f4c630f_large/precision-circuit-architecture-stockcake.jpg",
-      altText: "Componentes electrónicos",
+      imageUrl: carouselImg9,
+      altText: "Insumos para restaurantes",
       description:
-        "Componentes y dispositivos electrónicos para distribuidores y mayoristas.",
+        "Insumos de alta gama, cotize sus necesidades y obtenga precios competitivos.",
     },
     {
-      imageUrl:
-        "https://images.stockcake.com/public/3/9/6/396d22e1-48c0-4762-afc6-dc0b18c75896_large/automotive-parts-display-stockcake.jpg",
-      altText: "Repuestos automotrices",
+      imageUrl: carouselImg10,
+      altText: "Servicios",
       description:
-        "Repuestos y accesorios para vehículos, distribuidos al por mayor.",
+        "Servicio rápido de tapicería para negocios reemplazo de telas, rellenos y mecanismos, minimizando tiempos de inactividad en su establecimiento.",
     },
     {
-      imageUrl:
-        "https://images.stockcake.com/public/3/9/6/396d22e1-48c0-4762-afc6-dc0b18c75896_large/automotive-parts-display-stockcake.jpg",
-      altText: "Repuestos automotrices",
+      imageUrl: carouselImg11,
+      altText: "Servicios",
       description:
-        "Repuestos y accesorios para vehículos, distribuidos al por mayor.",
+        "Devolvemos la vida a sus muebles dañados con técnicas profesionales de restauración.",
     },
     {
-      imageUrl:
-        "https://images.stockcake.com/public/3/9/6/396d22e1-48c0-4762-afc6-dc0b18c75896_large/automotive-parts-display-stockcake.jpg",
-      altText: "Repuestos automotrices",
+      imageUrl: carouselImg12,
+      altText: "Entregas programadas",
       description:
-        "Repuestos y accesorios para vehículos, distribuidos al por mayor.",
+        "Garantizamos entregas seguras y puntuales de sus suministros, con procesos logísticos optimizados para que todo llegue en perfecto estado y listo para usar.",
     },
   ];
 
