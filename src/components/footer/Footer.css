@@ -32,6 +32,7 @@
 .footer-col p {
     line-height: 1.6;
     font-size: 0.95rem;
+    padding: 0 40px;
 }
 
 .footer-col ul {
@@ -64,6 +65,7 @@
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+    justify-content: center;
 }
 
 .social-links a {
@@ -100,4 +102,8 @@
     .social-links {
         justify-content: center;
     }
+
+    .footer-col p {
+    padding: 0 60px;
+}
 }
