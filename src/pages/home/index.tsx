@@ -77,7 +77,7 @@ const Home = () => {
       imageUrl: carouselImg10,
       altText: "Servicios",
       description:
-        "Servicio rápido de tapicería para negocios reemplazo de telas, rellenos y mecanismos, minimizando tiempos de inactividad en su establecimiento.",
+        "Servicio de retapizado, reemplazo de telas, rellenos y mecanismos, minimizando tiempos de inactividad en su establecimiento.",
     },
     {
       imageUrl: carouselImg11,
@@ -89,7 +89,7 @@ const Home = () => {
       imageUrl: carouselImg12,
       altText: "Entregas programadas",
       description:
-        "Garantizamos entregas seguras y puntuales de sus suministros, con procesos logísticos optimizados para que todo llegue en perfecto estado y listo para usar.",
+        "Garantizamos entregas seguras y puntuales de sus suministros, con procesos eficientes para que todo llegue en perfecto estado y listo para usar.",
     },
   ];
 
