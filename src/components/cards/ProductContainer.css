@@ -34,8 +34,18 @@
 /* Descomentar si se desea mostrar la descripción del producto */
 
 .product-description {
-  margin-top: 8px;
-  padding: 12px;
-  font-size: 0.9rem;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 0 12px;
+  font-size: 1.0rem;
   color: #ecf0f1;
+}
+
+@media (max-width: 768px) {
+  .product-description {
+    margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 0 8px;
+  font-size: 0.9rem;
+}
 }

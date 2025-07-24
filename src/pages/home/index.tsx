@@ -4,7 +4,6 @@ import Banner from "../../components/Banner";
 import Beneficios from "../../components/beneficios/Beneficios";
 
 const Home = () => {
-
   const products = [
     {
       imageUrl:
@@ -91,10 +90,24 @@ const Home = () => {
 
   return (
     <>
-      <Banner />
-      <ProductCarousel products={products} />
-      <Beneficios />
-      <CotizaForm />
+      {/* Sección de Banner */}
+      <section id="inicio">
+        <Banner />
+      </section>
+      {/* Sección de Productos */}
+      <section id="productos">
+        <ProductCarousel products={products} />
+      </section>
+
+      {/* Sección de Beneficios */}
+      <section id="beneficios">
+        <Beneficios />
+      </section>
+
+      {/* Sección de Contacto (Formulario) */}
+      <section id="contacto">
+        <CotizaForm />
+      </section>
     </>
   );
 };

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import logoVendrix from "../../assets/img/logo_vendrix.png";
 import "./Navbar.css";
 
 export const Navbar = () => {
@@ -20,8 +21,9 @@ export const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbar-logo">
-          <span className="logo-primary">Vend</span>
-          <span className="logo-accent">rix</span>
+          <a href="#inicio">
+            <img src={logoVendrix} alt="Vendrix logo" className="navbar-logo-img" />
+          </a>
         </div>
 
         {isMobile ? (
@@ -31,23 +33,46 @@ export const Navbar = () => {
             </button>
             <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
               <ul className="nav-links-mobile">
-                <li><a href="#inicio" onClick={toggleMenu}>Inicio</a></li>
-                <li><a href="#productos" onClick={toggleMenu}>Productos</a></li>
-                <li><a href="#beneficios" onClick={toggleMenu}>Beneficios</a></li>
-                <li><a href="#contacto" onClick={toggleMenu}>Contacto</a></li>
+                <li>
+                  <a href="#inicio" onClick={toggleMenu}>
+                    Inicio
+                  </a>
+                </li>
+                <li>
+                  <a href="#productos" onClick={toggleMenu}>
+                    Productos
+                  </a>
+                </li>
+                <li>
+                  <a href="#beneficios" onClick={toggleMenu}>
+                    Beneficios
+                  </a>
+                </li>
+                <li>
+                  <a href="#contacto" onClick={toggleMenu}>
+                    Contacto
+                  </a>
+                </li>
               </ul>
             </div>
           </>
         ) : (
           <ul className="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#beneficios">Beneficios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li>
+              <a href="#inicio">Inicio</a>
+            </li>
+            <li>
+              <a href="#productos">Productos</a>
+            </li>
+            <li>
+              <a href="#beneficios">Beneficios</a>
+            </li>
+            <li>
+              <a href="#contacto">Contacto</a>
+            </li>
           </ul>
         )}
       </nav>
     </>
   );
 };
-
