@@ -120,14 +120,14 @@
   }
 
   .navbar-logo {
-    height: 25px;
+    height: 30px;
     overflow: visible;
     display: flex;
     align-items: center;
   }
 
   .navbar-logo-img {
-    height: 86px;
+    height: 72px;
     width: auto;
     aspect-ratio: 1;
     object-fit: contain;
