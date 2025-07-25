@@ -1,5 +1,5 @@
 import './thanks.sass';
-import logoVendrix from "../../assets/img/logo_vendrix.png";
+import logoVendrix from "../../assets/img/logo_vendrix_navbar.png";
 
 const Thanks = () => {
     return (

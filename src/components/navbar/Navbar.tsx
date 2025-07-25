@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logoVendrix from "../../assets/img/logo_vendrix.png";
+import logoVendrix from "../../assets/img/logo_vendrix_navbar.png";
 import "./Navbar.css";
 
 export const Navbar = () => {
