@@ -24,6 +24,8 @@ export const Navbar = () => {
           <a href="#inicio">
             <img src={logoVendrix} alt="Vendrix logo" className="navbar-logo-img" />
           </a>
+          <span className="logo-primari-text">Ven</span>
+          <span className="logo-secundari-text">drix</span>
         </div>
 
         {isMobile ? (

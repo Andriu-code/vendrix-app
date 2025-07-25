@@ -17,23 +17,26 @@
   overflow: visible; /* corta los bordes si la imagen los tiene */
   display: flex;
   align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar-logo-img {
-  height: 162px; /* ajustable según tamaño deseado */
+  height: 144px; /* ajustable según tamaño deseado */
   width: auto;
   aspect-ratio: 1;
   object-fit: contain;
   margin-left: -25px;
 }
 
-/* .logo-primary {
+.logo-primari-text {
   color: #002f6c;
 }
 
-.logo-accent {
+.logo-secundari-text {
   color: #f57c00;
-} */
+}
 
 .nav-links {
   display: flex;
