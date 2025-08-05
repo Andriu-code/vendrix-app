@@ -6,12 +6,12 @@ import Beneficios from "../../components/beneficios/Beneficios";
 // Importa las imágenes locales
 import carouselImg1 from "../../assets/img/carousel/carousel_img_clean.jpg";
 import carouselImg2 from "../../assets/img/carousel/carousel_img_clean_1.jpg";
-import carouselImg3 from "../../assets/img/carousel/carousel_img_clean_2.jpg";
+import carouselImg3 from "../../assets/img/carousel/oficial_cleaning_img.png";
 import carouselImg4 from "../../assets/img/carousel/carousel_img_tools.jpg";
-import carouselImg5 from "../../assets/img/carousel/carousel_img_tools_1.jpg";
-import carouselImg6 from "../../assets/img/carousel/carousel_img_tools_2.jpg";
-import carouselImg7 from "../../assets/img/carousel/carousel_img_supplies.jpg";
-import carouselImg8 from "../../assets/img/carousel/carousel_img_supplies_1.png";
+import carouselImg5 from "../../assets/img/carousel/oficial_tools_img.png";
+import carouselImg6 from "../../assets/img/carousel/oficial_tools_img1.png";
+import carouselImg7 from "../../assets/img/carousel/oficial_suplies_img.png";
+import carouselImg8 from "../../assets/img/carousel/oficial_suplies_img1.png";
 import carouselImg9 from "../../assets/img/carousel/carousel_img_supplies_2.jpg";
 import carouselImg10 from "../../assets/img/carousel/carousel_img_services.jpg";
 import carouselImg11 from "../../assets/img/carousel/carousel_img_services_1.png";
@@ -23,49 +23,49 @@ const Home = () => {
       imageUrl: carouselImg1, // Usa la importación local
       altText: "Estante productos de limpieza",
       description:
-        "Ofrecemos gran variedad de productos de limpieza, de distintas marcas al por mayor.",
+        "Ofrecemos gran variedad de productos para limpieza del hogar y oficinas, afianzados a las mejores marcas del mercado.",
     },
     {
       imageUrl: carouselImg2,
       altText: "Papel para limpieza",
       description:
-        "Todo lo que necesitas para mantener tus espacios impecable.",
+        "Accesorios para uso sanitario como:\ndispensadores de papel para manos, papel higiénico, jabón de manos, shampo entre otros.",
     },
     {
       imageUrl: carouselImg3,
       altText: "Productos de limpieza",
       description:
-        "Productos de limpieza, diseñados para empresas que exigen higiene profesional.",
+        "Todo lo que necesitas en artículos para limpieza de tipo industrial, para mantener tus espacios limpios y seguros, que te ayudaran a cubrir estándares de seguridad física e industrial.",
     },
     {
       imageUrl: carouselImg4,
       altText: "Abastecimiento ferretero",
       description:
-        "Abastecimiento confiable de productos ferreteros las mejores marcas.",
+        "Abastecimiento de productos ferreteros con las mejores marcas, tornillería, mangueras, artículos de plomería, carpintería, electricidad, etc.",
     },
     {
       imageUrl: carouselImg5,
       altText: "Kits ferreteros",
       description:
-        "Todo lo que su empresa necesita, desde lo básico hasta equipos especializados.",
+        "Diferentes tipos de herramientas y equipos diseñados para la industria.\nControles remotos industriales\nBombas: sumergibles, succión, centrífugas\nFlujómetros de varios diámetros\nFabricación de piezas mayores a 3”.",
     },
     {
       imageUrl: carouselImg6,
       altText: "Productos químicos industriales",
       description:
-        "Kits ferreteros completos por área (electricidad, plomería, construcción), empacados listos para su distribución a equipos corporativos.",
+        "Suministro de tanques Rotoplast para uso doméstico e industrial de diferentes capacidades según la necesidad de nuestros clientes.",
     },
     {
       imageUrl: carouselImg7,
       altText: "Insumos para restaurantes",
       description:
-        "Soluciones masivas de empaques y utensilios desechables, resistentes, con entregas programadas.",
+        "Variedad de artículos para el abastecimiento de cafeterías en oficina e industrias.",
     },
     {
       imageUrl: carouselImg8,
       altText: "Insumos para restaurantes",
       description:
-        "Kits de inicio para restaurantes nuevos: vajilla, cubertería, insumos básicos y equipos menores.",
+        "Fabricación de equipos para la industria:\nMangas de hule ámbar.\nMangas de lona fortoflex.\nGabachas personalizadas para uso industrial.\n",
     },
     {
       imageUrl: carouselImg9,
@@ -77,7 +77,7 @@ const Home = () => {
       imageUrl: carouselImg10,
       altText: "Servicios",
       description:
-        "Servicio de retapizado, reemplazo de telas, rellenos y mecanismos, minimizando tiempos de inactividad en su establecimiento.",
+        "Además contamos con servicios profesionales de:\nFabricación de muebles en melamina.\nServicio de tapicería.\nFabricación de fundas para uso industrial.\n",
     },
     {
       imageUrl: carouselImg11,

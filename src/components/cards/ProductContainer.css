@@ -38,6 +38,7 @@
   margin-bottom: 12px;
   padding: 0 12px;
   font-size: 1.0rem;
+  white-space: pre-wrap;
   color: #ecf0f1;
 }
 
