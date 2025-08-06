@@ -6,12 +6,12 @@ import Beneficios from "../../components/beneficios/Beneficios";
 // Importa las imágenes locales
 import carouselImg1 from "../../assets/img/carousel/carousel_img_clean.jpg";
 import carouselImg2 from "../../assets/img/carousel/carousel_img_clean_1.jpg";
-import carouselImg3 from "../../assets/img/carousel/oficial_cleaning_img.png";
+import carouselImg3 from "../../assets/img/carousel/limpiadores.jpeg";
 import carouselImg4 from "../../assets/img/carousel/carousel_img_tools.jpg";
-import carouselImg5 from "../../assets/img/carousel/oficial_tools_img.png";
-import carouselImg6 from "../../assets/img/carousel/oficial_tools_img1.png";
-import carouselImg7 from "../../assets/img/carousel/oficial_suplies_img.png";
-import carouselImg8 from "../../assets/img/carousel/oficial_suplies_img1.png";
+import carouselImg5 from "../../assets/img/carousel/maquinas.jpeg";
+import carouselImg6 from "../../assets/img/carousel/rotoplast.jpeg";
+import carouselImg7 from "../../assets/img/carousel/cafeteria.jpeg";
+import carouselImg8 from "../../assets/img/carousel/mangas.jpeg";
 import carouselImg9 from "../../assets/img/carousel/carousel_img_supplies_2.jpg";
 import carouselImg10 from "../../assets/img/carousel/carousel_img_services.jpg";
 import carouselImg11 from "../../assets/img/carousel/carousel_img_services_1.png";
